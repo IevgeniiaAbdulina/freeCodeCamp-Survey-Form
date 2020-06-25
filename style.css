@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;700");
+
+:root {
+  --color-primary: #f16b52;
+  --color-secondary: #7eb8c4;
+  --color-bg: #252847;
+  --color-alert: #fbdb84;
+  --color-gray: #7c8094;
+  --color-light-gray: #cededf;
+
+  --body-font-family: "Dosis", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100vw;
+  height: auto;
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  font-weight: var(--font-weight-regular);
+
+  background: url(https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80)
+    no-repeat top / auto auto;
+}
+
+main {
+  width: 40vw;
+  height: auto;
+  border-radius: 8px;
+  margin: 4em auto;
+  padding: 40px 60px;
+  background-color: var(--color-bg);
+}
+
+@media (max-width: 460px) {
+  main {
+    width: 100vw;
+    border-radius: 0;
+    margin: 0;
+    padding: 20px 40px;
+  }
+}
+
+a {
+  font-weight: var(--font-weight-bold);
+  text-decoration: none;
+  color: var(--color-alert);
+  transition: 0.2s;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--color-bg);
+}
+
+header {
+  text-align: center;
+  margin: 10px 0;
+  color: var(--color-light-gray);
+}
+
+form {
+  margin: 20px 0;
+  color: var(--color-light-gray);
+}
+
+h3 {
+  color: var(--color-secondary);
+  padding: 16px 0;
+}
+
+hr {
+  border: 1px solid var(--color-secondary);
+}
+
+.container {
+  margin: 16px 0;
+}
+
+.form-group {
+  margin: 8px 0;
+}
+
+input,
+textarea,
+select {
+  margin: 8px 0;
+  background: var(--color-gray);
+  color: var(--color-bg);
+  border: 1px solid var(--color-light-gray);
+  border-radius: 4px;
+  padding: 12px;
+  outline: none;
+  white-space: nowrap;
+  font-weight: var(--font-weight-regular);
+  font-size: 1em;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: white;
+}
+input:hover,
+textarea:hover,
+select:hover {
+  border: 1px solid var(--color-alert);
+}
+
+label {
+  font-weight: var(--font-weight-bold);
+}
+
+.personal-info input,
+textarea,
+input[type="url"] {
+  width: 50%;
+}
+
+small {
+  opacity: 0.6;
+}
+
+input[name="skills"],
+input[name="other-discipline"] {
+  margin: 0 10px 0 0;
+}
+
+.portfolio p {
+  margin: 16px 0;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: var(--font-weight-bold);
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+footer {
+  text-align: center;
+  padding: 0 4em 6em 4em;
+  font-size: 1.2em;
+}
+
+@media (max-width: 460px) {
+  footer {
+    background-color: var(--color-bg);
+    padding: 2em;
+    font-size: 0.8em;
+  }
+}
